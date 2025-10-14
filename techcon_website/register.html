@@ -19,13 +19,34 @@
   </header>
 
   <main>
-    <section>
-      <h2>Sign Up</h2>
+    <article>
+      <h2>Sign Up Form</h2>
       <p>
-        Registration opens soon! Stay tuned for details on early-bird discounts
-        and group packages for TechCon 2024 attendees.
+        Complete the form below to register for TechCon 2024. Fields marked with * are required.
       </p>
-    </section>
+
+      <!-- Required form elements -->
+      <form action="#" method="post">
+        <div>
+          <label for="email">Email address *</label><br>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+          <label for="password">Password *</label><br>
+          <input type="password" id="password" name="password" required>
+        </div>
+
+        <div>
+          <input type="checkbox" id="updates" name="updates">
+          <label for="updates">Subscribe to TechCon updates and newsletters</label>
+        </div>
+
+        <div>
+          <button type="submit">Register Now</button>
+        </div>
+      </form>
+    </article>
   </main>
 
   <footer>
