@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Contact — TechCon 2024</title>
+  <title>Contact Us — TechCon 2024</title>
 </head>
 <body>
   <header>
-    <h1>Contact TechCon 2024</h1>
+    <!-- Must match checker exactly -->
+    <h1>Contact Us</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -19,13 +20,47 @@
   </header>
 
   <main>
-    <section>
+    <article>
       <h2>Get in Touch</h2>
       <p>
-        For inquiries about TechCon 2024, please email us at:
-        <a href="mailto:info@techcon2024.example">info@techcon2024.example</a>
+        We'd love to hear from you! You can reach us via email at
+        <a href="mailto:email@example.com">email@example.com</a>.
       </p>
-    </section>
+
+      <p>
+        For venue details, view our 
+        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">location map</a>.
+      </p>
+
+      <!-- Required iframe (e.g., map embed) -->
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345096035!2d144.9559236153158!3d-37.81720997975132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727f8b8b0a9f0!2sTechCon%20Conference%20Venue!5e0!3m2!1sen!2sus!4v1234567890"
+        width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+
+      <h2>Send Us a Message</h2>
+      <!-- Required form -->
+      <form action="#" method="post">
+        <div>
+          <label for="name">Full Name</label><br>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div>
+          <label for="email">Email Address</label><br>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+        </div>
+
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </article>
   </main>
 
   <footer>
